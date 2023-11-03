@@ -1,18 +1,20 @@
 [
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_device_xiaomi_alioth",
+        "remote":       "dfunkt",
+        "repository":   "android_device_xiaomi_alioth",
         "target_path":  "device/xiaomi/alioth",
-        "revision":     "uvite"
+        "revision":     "uvite",
+	"clone-depth":  "1"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_kernel_xiaomi_sm8250",
+        "remote":       "dfunkt",
+        "repository":   "android_kernel_xiaomi_sm8250",
         "target_path":  "kernel/msm-4.19",
-        "revision":     "uvite"
+        "revision":     "uvite",
+	"clone-depth":  "1"
     },
     {
-        "remote":       "blobs",
+        "remote":       "dfunkt",
         "repository":   "proprietary_vendor_xiaomi",
         "target_path":  "vendor/xiaomi",
         "revision":     "uvite",
@@ -22,42 +24,56 @@
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_audio",
         "target_path":  "vendor/qcom/opensource/audio-hal/primary-hal",
-        "revision":     "uvite-865"
+        "revision":     "uvite-865",
+	"clone-depth":  "1"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "uvite-865"
+        "revision":     "uvite-865",
+	"clone-depth":  "1"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_gps",
         "target_path":  "hardware/qcom/gps",
-        "revision":     "uvite-legacy-component"
+        "revision":     "uvite-legacy-component",
+	"clone-depth":  "1"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_media",
         "target_path":  "hardware/qcom/media",
-        "revision":     "uvite-865"
+        "revision":     "uvite-865",
+	"clone-depth":  "1"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_xiaomi",
         "target_path":  "hardware/xiaomi",
-        "revision":     "uvite"
+        "revision":     "uvite",
+	"clone-depth":  "1"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_vendor_nxp_opensource_halimpl",
         "target_path":  "vendor/nxp/opensource/halimpl",
-        "revision":     "uvite-SN100X-legacy"
+        "revision":     "uvite-SN100X-legacy",
+	"clone-depth":  "1"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_vendor_nxp_opensource_hidlimpl",
         "target_path":  "vendor/nxp/opensource/hidlimpl",
-        "revision":     "uvite-SN100X-legacy"
+        "revision":     "uvite-SN100X-legacy",
+	"clone-depth":  "1"
+    },
+    {
+        "remote":       "dfunkt",
+        "repository":   "vendor_google_modules",
+        "target_path":  "vendor/google/modules",
+        "revision":     "uvite",
+	"clone-depth":  "1"
     }
 ]
