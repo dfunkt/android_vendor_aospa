@@ -227,14 +227,6 @@ elif [ "${KEY_MAPPINGS}" ]; then
 
     checkExit
 
-    echo -e "${CLR_BLD_BLU}Generating signed install package${CLR_RST}"
-    ota_from_target_files -k $KEY_MAPPINGS/releasekey \
-        --block ${INCREMENTAL} \
-        aospa-$AOSPA_VERSION-signed-target_files-$FILE_NAME_TAG.zip \
-        aospa-$AOSPA_VERSION.zip
-
-    checkExit
-
     if [ "$DELTA_TARGET_FILES" ]; then
         # die if base target doesn't exist
         if [ ! -f "$DELTA_TARGET_FILES" ]; then
@@ -258,13 +250,6 @@ elif [ "${KEY_MAPPINGS}" ]; then
 # Build rom package
 elif [ "$FLAG_IMG_ZIP" = 'y' ]; then
     m otatools target-files-package "$CMD"
-
-    checkExit
-
-    echo -e "${CLR_BLD_BLU}Generating install package${CLR_RST}"
-    ota_from_target_files \
-        "$OUT"/obj/PACKAGING/target_files_intermediates/aospa_$DEVICE-target_files-$FILE_NAME_TAG.zip \
-        aospa-$AOSPA_VERSION.zip
 
     checkExit
 
